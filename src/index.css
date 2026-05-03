@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { scroll-behavior: smooth; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #06080C;
+  color: #E8EDF4;
+  font-family: 'Exo 2', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0D1117; }
+::-webkit-scrollbar-thumb { background: #00D4FF44; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #00D4FF88; }
+
+/* Keyframes */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 10px #00D4FF33, 0 0 20px #00D4FF11; }
+  50%       { box-shadow: 0 0 28px #00D4FF88, 0 0 56px #00D4FF33; }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+@keyframes scanMove {
+  0%   { transform: translateY(-10%); opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { transform: translateY(110vh); opacity: 0; }
+}
+@keyframes glitchA {
+  0%   { clip-path: inset(40% 0 61% 0); transform: translate(-3px, 0); }
+  25%  { clip-path: inset(92% 0 1% 0);  transform: translate(3px, 0); }
+  50%  { clip-path: inset(43% 0 1% 0);  transform: translate(0, 0); }
+  75%  { clip-path: inset(25% 0 58% 0); transform: translate(3px, 0); }
+  100% { clip-path: inset(58% 0 43% 0); transform: translate(0, 0); }
+}
+@keyframes glitchB {
+  0%   { clip-path: inset(15% 0 80% 0); transform: translate(3px, 0); }
+  33%  { clip-path: inset(60% 0 10% 0); transform: translate(-3px, 0); }
+  66%  { clip-path: inset(5% 0 70% 0);  transform: translate(0, 0); }
+  100% { clip-path: inset(80% 0 5% 0);  transform: translate(3px, 0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes dash {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Utility classes */
+.glow-blue       { box-shadow: 0 0 20px #00D4FF44, 0 0 40px #00D4FF22; }
+.glow-blue-text  { text-shadow: 0 0 20px #00D4FF88, 0 0 40px #00D4FF44; }
+.glow-orange-text{ text-shadow: 0 0 16px #FF6B3588; }
+
+.animate-float        { animation: floatY 4s ease-in-out infinite; }
+.animate-pulse-glow   { animation: pulseGlow 2.5s ease-in-out infinite; }
+.animate-fade-in-up   { animation: fadeInUp 0.8s ease-out both; }
+.animate-fade-in      { animation: fadeIn 1s ease-out both; }
+.animate-rotate-slow  { animation: rotateSlow 20s linear infinite; }
+
+/* Glitch text */
+.glitch { position: relative; }
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+.glitch::before {
+  color: #00D4FF;
+  animation: glitchA 4s infinite steps(1);
+}
+.glitch::after {
+  color: #FF6B35;
+  animation: glitchB 3s infinite steps(1);
+  animation-delay: -1.5s;
+}
+
+/* Hero grid background */
+.hero-grid {
+  background-color: #06080C;
+  background-image:
+    linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Scan beam */
+.scan-beam {
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0,212,255,0.4), transparent);
+  animation: scanMove 7s linear infinite;
+  pointer-events: none;
+}
+
+/* Corner brackets */
+.corner-bracket { position: relative; }
+.corner-bracket::before,
+.corner-bracket::after {
+  content: '';
+  position: absolute;
+  width: 18px; height: 18px;
+  border-color: #00D4FF;
+  border-style: solid;
+  opacity: 0.7;
+}
+.corner-bracket::before { top: -4px; left: -4px; border-width: 2px 0 0 2px; }
+.corner-bracket::after  { bottom: -4px; right: -4px; border-width: 0 2px 2px 0; }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }

@@ -3,7 +3,7 @@ export default function WolfLogo ({ size = 80, className = '', variant = 'svg' }
   if (variant === 'icon') {
     return (
       <img
-        src="/logo.png"
+        src="logo.png"
         alt="WolfTech"
         width={size}
         height={size}
@@ -17,7 +17,7 @@ export default function WolfLogo ({ size = 80, className = '', variant = 'svg' }
   if (variant === 'full') {
     return (
       <img
-        src="/logo_completo.png"
+        src="logo_completo.png"
         alt="WolfTech"
         width={size}
         className={`h-auto object-contain ${className}`}

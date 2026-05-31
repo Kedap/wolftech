@@ -3,7 +3,7 @@ export default function About() {
     { label: "Institución", value: "TESCHA" },
     { label: "Ubicación", value: "Chalco, Edo. Méx." },
     { label: "Carrera", value: "Ing. Sistemas Computacionales" },
-    { label: "Fundación", value: "2025" },
+    { label: "Fundación", value: "2024" },
   ];
 
   return (

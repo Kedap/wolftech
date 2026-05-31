@@ -1,5 +1,11 @@
 const ITEMS = [
   {
+    year: "May 2026",
+    title: "3er lugar minisumo rc profesional y 4to lugar minisumo rc amateur",
+    desc: "Segundo podio de ISC en torneo de robótica competitiva en UAEM Lerma.",
+    color: "wolf_green",
+  },
+  {
     year: "May 2025",
     title: "3er lugar robotfut",
     desc: "Primer podio de ISC en torneo de robótica competitiva.",
@@ -13,14 +19,15 @@ const ITEMS = [
   },
   {
     year: "Dic 2024",
-    title: "Primer Torneo Participado Xmas Challenge",
-    desc: "Debut en competencia universitaria local con las categorías sumo",
+    title: "Primer Torneo fuera de la escuela Participado Xmas Challenge",
+    desc: "Debut en competencia con las categorías sumo",
     color: "wolf_green",
   },
+  ,
   {
     year: "Nov 2024",
-    title: "Prototipo #001",
-    desc: "Construcción del primer robot del equipo, marcando el inicio del proyecto WolfTec",
+    title: "Prototipo 'Refri'",
+    desc: "Construcción del primer robot del equipo creado con protoboard y acetato, marcando el inicio del proyecto WolfTec",
     color: "wolf_blue",
   },
 ];

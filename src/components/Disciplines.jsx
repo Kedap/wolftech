@@ -60,9 +60,8 @@ export default function Disciplines() {
           className="reveal font-display font-bold text-4xl sm:text-5xl text-wolf_white mb-4"
           style={{ transitionDelay: "0.1s" }}
         >
-          CATEGORÍAS DE
-          <br />
-          <span className="text-wolf_blue">COMPETENCIA</span>
+          CATEGORÍAS DE{" "}
+          <span className="text-wolf_blue block">COMPETENCIA</span>
         </h2>
         <p
           className="reveal font-body text-wolf_gray mb-16 max-w-xl"

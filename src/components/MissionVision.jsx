@@ -9,8 +9,8 @@ export default function MissionVision() {
           className="reveal font-display font-bold text-4xl sm:text-5xl text-wolf_white mb-16"
           style={{ transitionDelay: "0.1s" }}
         >
-          MISIÓN &<br />
-          <span className="text-wolf_blue">VISIÓN</span>
+          MISIÓN &amp;{" "}
+          <span className="text-wolf_blue block">VISIÓN</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">

@@ -17,9 +17,8 @@ export default function About() {
           className="reveal font-display font-bold text-4xl sm:text-5xl text-wolf_white mb-16"
           style={{ transitionDelay: "0.1s" }}
         >
-          ¿QUIÉNES
-          <br />
-          <span className="text-wolf_blue">SOMOS?</span>
+          ¿QUIÉNES{" "}
+          <span className="text-wolf_blue block">SOMOS?</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">

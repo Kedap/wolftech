@@ -35,9 +35,9 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="font-mono text-wolf_blue text-xs tracking-widest mb-4">
+            <p className="font-mono text-wolf_blue text-xs tracking-widest mb-4">
               NAVEGACIÓN
-            </h4>
+            </p>
             <nav className="flex flex-col gap-3">
               {NAV.map(({ label, href }) => (
                 <button
@@ -53,9 +53,9 @@ export default function Footer() {
 
           {/* Contact info */}
           <div>
-            <h4 className="font-mono text-wolf_blue text-xs tracking-widest mb-4">
+            <p className="font-mono text-wolf_blue text-xs tracking-widest mb-4">
               INSTITUCIÓN
-            </h4>
+            </p>
             <div className="space-y-2 font-body text-wolf_gray text-sm">
               <p>Tecnológico de Estudios Superiores de Chalco</p>
               <p>Chalco, Estado de México</p>

@@ -65,9 +65,8 @@ export default function Team() {
           className="reveal font-display font-bold text-4xl sm:text-5xl text-wolf_white mb-4"
           style={{ transitionDelay: "0.1s" }}
         >
-          NUESTRO
-          <br />
-          <span className="text-wolf_blue">EQUIPO</span>
+          NUESTRO{" "}
+          <span className="text-wolf_blue block">EQUIPO</span>
         </h2>
         <p
           className="reveal font-body text-wolf_gray mb-16 max-w-xl"

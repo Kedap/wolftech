@@ -48,9 +48,8 @@ export default function Achievements() {
           className="reveal font-display font-bold text-4xl sm:text-5xl text-wolf_white mb-16"
           style={{ transitionDelay: "0.1s" }}
         >
-          NUESTROS
-          <br />
-          <span className="text-wolf_blue">LOGROS</span>
+          NUESTROS{" "}
+          <span className="text-wolf_blue block">LOGROS</span>
         </h2>
 
         <div className="relative">

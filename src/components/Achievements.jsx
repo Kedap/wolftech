@@ -23,7 +23,6 @@ const ITEMS = [
     desc: "Debut en competencia con las categorías sumo",
     color: "wolf_green",
   },
-  ,
   {
     year: "Nov 2024",
     title: "Prototipo 'Refri'",

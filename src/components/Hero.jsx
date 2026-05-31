@@ -43,10 +43,10 @@ export default function Hero() {
         {/* Main title */}
         <h1
           className="glitch font-display font-black text-7xl sm:text-8xl md:text-9xl text-wolf_white glow-blue-text mb-4 animate-fade-in"
-          data-text="WOLFTECH"
+          data-text="WOLFTEC"
           style={{ animationDelay: "0.4s", opacity: 0 }}
         >
-          WOLFTECH
+          WOLFTEC
         </h1>
 
         {/* Divider */}

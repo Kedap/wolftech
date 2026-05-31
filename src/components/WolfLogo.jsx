@@ -1,28 +1,32 @@
-export default function WolfLogo ({ size = 80, className = '', variant = 'svg' }) {
+export default function WolfLogo({
+  size = 80,
+  className = "",
+  variant = "svg",
+}) {
   // Variante con imagen PNG del logo horizontal (sin texto)
-  if (variant === 'icon') {
+  if (variant === "icon") {
     return (
       <img
         src="logo.png"
-        alt="WolfTech"
+        alt="WolfTec"
         width={size}
         height={size}
         className={`object-contain ${className}`}
       />
-    )
+    );
   }
 
   // Variante con imagen PNG del logo completo (lobo + texto WOLFTEC)
   // Es vertical, así que size controla el ancho y el alto es automático
-  if (variant === 'full') {
+  if (variant === "full") {
     return (
       <img
         src="logo_completo.png"
-        alt="WolfTech"
+        alt="WolfTec"
         width={size}
         className={`h-auto object-contain ${className}`}
       />
-    )
+    );
   }
 
   // Variante original SVG (default)
@@ -75,8 +79,20 @@ export default function WolfLogo ({ size = 80, className = '', variant = 'svg' }
         opacity="0.55"
       />
       {/* Circuit details */}
-      <polyline points="42,38 38,34 34,34" fill="none" stroke="#00D4FF" strokeWidth="0.7" opacity="0.35" />
-      <polyline points="58,38 62,34 66,34" fill="none" stroke="#00D4FF" strokeWidth="0.7" opacity="0.35" />
+      <polyline
+        points="42,38 38,34 34,34"
+        fill="none"
+        stroke="#00D4FF"
+        strokeWidth="0.7"
+        opacity="0.35"
+      />
+      <polyline
+        points="58,38 62,34 66,34"
+        fill="none"
+        stroke="#00D4FF"
+        strokeWidth="0.7"
+        opacity="0.35"
+      />
     </svg>
-  )
+  );
 }

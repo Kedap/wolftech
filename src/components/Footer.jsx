@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <WolfLogo variant="icon" size={40} />
               <span className="font-display font-bold text-xl text-wolf_white tracking-widest">
-                WOLF<span className="text-wolf_blue">TECH</span>
+                WOLF<span className="text-wolf_blue">TEC</span>
               </span>
             </div>
             <p className="font-body text-wolf_gray text-sm leading-relaxed">
@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-wolf_steel pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-mono text-wolf_gray_dark text-xs tracking-wider">
-            2025 WOLFTECH
+            2025 WOLFTEC
           </p>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 bg-wolf_blue rounded-full animate-pulse" />

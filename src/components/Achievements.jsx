@@ -7,7 +7,7 @@ const ITEMS = [
   },
   {
     year: "May 2025",
-    title: "Fundación de WolfTech",
+    title: "Fundación de WolfTec",
     desc: "Creación oficial del equipo con los primeros integrantes de la carrera de ISC.",
     color: "wolf_orange",
   },
@@ -20,7 +20,7 @@ const ITEMS = [
   {
     year: "Nov 2024",
     title: "Prototipo #001",
-    desc: "Construcción del primer robot del equipo, marcando el inicio del proyecto WolfTech.",
+    desc: "Construcción del primer robot del equipo, marcando el inicio del proyecto WolfTec",
     color: "wolf_blue",
   },
 ];

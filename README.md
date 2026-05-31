@@ -1,2 +1,3 @@
-# wolftech
+# Wolftec
+
 Equipo de robotica

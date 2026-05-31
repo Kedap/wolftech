@@ -55,7 +55,7 @@ export default function About() {
           {/* Right: text */}
           <div className="reveal space-y-6" style={{ transitionDelay: "0.3s" }}>
             <p className="font-body text-wolf_white/80 leading-relaxed text-lg">
-              <span className="text-wolf_blue font-semibold">WolfTech</span> es
+              <span className="text-wolf_blue font-semibold">WolfTec</span> es
               el equipo de robótica competitivo del Tecnológico de Estudios
               Superiores de Chalco (
               <span className="text-wolf_white font-medium">TESCHA</span>),

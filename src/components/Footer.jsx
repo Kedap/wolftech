@@ -71,12 +71,12 @@ export default function Footer() {
                 GITHUB
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.facebook.com/people/Wolftesch/61577342693841/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-wolf_gray text-xs tracking-widest hover:text-wolf_orange transition-colors duration-200 border border-wolf_steel hover:border-wolf_orange/40 px-3 py-1.5"
               >
-                INSTAGRAM
+                FACEBOOK
               </a>
             </div>
           </div>

@@ -1,5 +1,11 @@
 const ITEMS = [
   {
+    year: "Jun 2026",
+    title: "Podio absoluto (1er, 2do y 3er lugar) en Sumo RC Profesional",
+    desc: "Tercer podio de ISC en torneo de robótica competitiva, logrado en Tectron (Villa Guerrero)",
+    color: "wolf_orange",
+  },
+  {
     year: "May 2026",
     title: "3er lugar minisumo rc profesional y 4to lugar minisumo rc amateur",
     desc: "Segundo podio de ISC en torneo de robótica competitiva en UAEM Lerma.",
@@ -48,8 +54,7 @@ export default function Achievements() {
           className="reveal font-display font-bold text-4xl sm:text-5xl text-wolf_white mb-16"
           style={{ transitionDelay: "0.1s" }}
         >
-          NUESTROS{" "}
-          <span className="text-wolf_blue block">LOGROS</span>
+          NUESTROS <span className="text-wolf_blue block">LOGROS</span>
         </h2>
 
         <div className="relative">
